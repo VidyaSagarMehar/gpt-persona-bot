@@ -3,7 +3,6 @@ from openai import OpenAI
 from prompt import SYSTEM_PROMPT
 import json
 
-
 load_dotenv()
 
 client = OpenAI()
@@ -11,7 +10,6 @@ client = OpenAI()
 messages = [
     {"role": 'system', "content": SYSTEM_PROMPT}
 ]
-
 
 while True:
     query = input(">  ")
